@@ -105,3 +105,5 @@ Install-WindowsFeature -name Web-Server -IncludeManagementTools
 12. On the Overview page of vm-1, note the Public IP address for your VM. The address shown in the following example is 20.230.55.178, your address is different:
 ![Alt text](image-2.png)
 14. To confirm that you can access the vm-1 web server from the internet, open an internet browser on your computer and browse to http://<public-ip-address-from-previous-step>.
+You see the IIS default page, because inbound traffic from the internet to the asg-web application security group is allowed through port 80.
+The network interface attached for vm-1 is associated with the asg-web application security group and allows the connection.
