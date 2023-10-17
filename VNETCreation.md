@@ -61,22 +61,14 @@ VMs that you create by using virtual machine scale sets in flexible orchestratio
 
 ## Connect to the Virtual Machines
 1. In the portal, search for and select Virtual machines.
-
 2. On the Virtual machines page, select vm-1.
-
 3. In the Overview of vm-1, select Connect.
-
 4. In the Connect to virtual machine page, select the Bastion tab.
-
 5. Select Use Bastion.
-
 6. Enter the username and password you created when you created the VM, and then select Connect.
 
 ## Communicate between VMs
-1. At the bash prompt for vm-1, enter ping -c 4 vm-2.
-
-2.Close the Bastion connection to VM1.
-
+1. At the bash prompt for
+2. Close the Bastion connection to VM1.
 3. Repeat the steps in Connect to a virtual machine to connect to VM2.
-
 4. At the bash prompt for vm-2, enter ping -c 4 vm-1.
