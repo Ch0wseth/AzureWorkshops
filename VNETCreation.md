@@ -1,4 +1,4 @@
-# How to create a VNET
+# Create a virtual network
 
 ## Goal of the Workshop
 
@@ -24,7 +24,7 @@ The pricing for Azure Bastion is based on the number of hours the service is ena
     - **Starting address**: Enter the starting address for your subnet.
     - **Subnet name**: Enter a name for your subnet.
     - **Subnet address range**: Enter the subnet address range.
-9. Select **Save** then ** Review + Create** and when the validation passes, select **Create**.
+9. Select **Save** then **Review + Create** and when the validation passes, select **Create**.
 
 
 ## Create virtual machines
