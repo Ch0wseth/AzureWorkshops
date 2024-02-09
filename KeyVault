@@ -1,0 +1,29 @@
+# Donner à une application web l'accès à un Key Vault
+
+## **1. Configurer une identité managée pour l'application web**
+
+   Dans le tableau de bord Azure, naviguez jusqu'à votre application web. Une fois que vous êtes sur la page de l'application web, cliquez sur "Identité" dans le menu de gauche. Sous l'onglet "Système assigné", mettez le statut sur "On" et cliquez sur "Enregistrer".
+
+## **2. Accédez à votre Key Vault**
+
+   Retournez à votre Key Vault en naviguant jusqu'à lui à partir du tableau de bord Azure, ou en le recherchant dans le bar "Toutes les ressources".
+
+## **3. Ouvrez les stratégies d'accès**
+
+   Dans le menu de gauche de votre Key Vault, cliquez sur "Accès aux stratégies".
+
+## **4. Ajouter une nouvelle stratégie d'accès**
+
+   Cliquez sur "+ Ajouter un accès à la stratégie". Cela ouvrira un nouveau panneau.
+
+## **5. Sélectionnez le principal**
+
+   Dans le champ "Sélectionner un principal", tapez le nom de votre application web et sélectionnez-le dans la liste déroulante.
+
+## **6. Sélectionnez les autorisations**
+
+   Dans "Sélectionner les autorisations", choisissez les autorisations que vous souhaitez accorder à votre application web. Vous pouvez choisir des autorisations pour les clés, les secrets et les certificats.
+
+## **7. Ajoutez la stratégie d'accès**
+
+   Cliquez sur "Ajouter" pour enregistrer la nouvelle stratégie d'accès. Votre application web a maintenant les autorisations que vous avez définies sur votre Key Vault.
