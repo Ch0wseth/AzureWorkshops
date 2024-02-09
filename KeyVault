@@ -1,5 +1,39 @@
 # Donner à une application web l'accès à un Key Vault
+# Création d'un Key Vault dans le portail Azure
 
+Suivez ces étapes pour créer un Key Vault dans le portail Azure :
+
+1. Connectez-vous au portail Azure à `https://portal.azure.com`.
+
+2. Dans le menu de gauche, cliquez sur `Créer une ressource`.
+
+3. Dans la boîte de recherche `Nouveau`, tapez `Key Vault`.
+
+4. Dans les résultats de la recherche, cliquez sur `Key Vault`.
+
+5. Dans la nouvelle fenêtre qui s'ouvre, cliquez sur `Créer`.
+
+6. Dans le formulaire `Créer un coffre de clés`, remplissez les détails :
+
+   - `Nom` : Entrez un nom unique pour le Key Vault. Le nom doit être un nom de domaine valide, composé de caractères alphanumériques et de tirets. Il doit avoir entre 3 et 24 caractères.
+
+   - `Abonnement` : Sélectionnez votre abonnement Azure. Si vous n'avez pas d'abonnement, vous devrez en créer un.
+
+   - `Groupe de ressources` : Sélectionnez un groupe de ressources existant ou créez-en un nouveau. Un groupe de ressources est un conteneur qui contient des ressources connexes pour une solution Azure.
+
+   - `Emplacement` : Sélectionnez l'emplacement de votre Key Vault. Choisissez un emplacement qui est proche de vos services pour réduire la latence.
+
+   - `Niveau tarifaire` : Sélectionnez le niveau tarifaire approprié. Les options sont `Standard` et `Premium`.
+
+7. Une fois que vous avez rempli les détails, cliquez sur `Revoir + créer`.
+
+8. Après avoir vérifié les détails, cliquez sur `Créer` pour finaliser la création du Key Vault.
+
+9. Une fois le Key Vault créé, vous pouvez y ajouter des clés, des secrets et des certificats. Assurez-vous de gérer l'accès au Key Vault en utilisant des stratégies d'accès.
+
+**Note** : Les clés, les secrets et les certificats sont des ressources sensibles. Assurez-vous de gérer l'accès à ces ressources de manière appropriée.
+
+# Accès
 ## **1. Configurer une identité managée pour l'application web**
 
    Dans le tableau de bord Azure, naviguez jusqu'à votre application web. Une fois que vous êtes sur la page de l'application web, cliquez sur "Identité" dans le menu de gauche. Sous l'onglet "Système assigné", mettez le statut sur "On" et cliquez sur "Enregistrer".
