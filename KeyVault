@@ -61,3 +61,24 @@ Suivez ces étapes pour créer un Key Vault dans le portail Azure :
 ## **7. Ajoutez la stratégie d'accès**
 
    Cliquez sur "Ajouter" pour enregistrer la nouvelle stratégie d'accès. Votre application web a maintenant les autorisations que vous avez définies sur votre Key Vault.
+
+
+# Ajout des références du Key Vault dans les paramètres d'application d'une Web App
+
+1. Dans le portail Azure, naviguez jusqu'à votre Web App.
+
+2. Dans le menu de gauche, cliquez sur `Configuration` sous `Paramètres`.
+
+3. Dans l'onglet `Paramètres d'application`, cliquez sur `Nouveau paramètre d'application`.
+
+4. Remplissez les détails :
+
+   - `Nom` : Entrez le nom de la variable d'environnement que votre application utilisera pour accéder à la valeur du secret.
+
+   - `Valeur` : Entrez la référence du secret du Key Vault sous la forme `@Microsoft.KeyVault(SecretUri=secret_uri)`, où `secret_uri` est l'URI du secret dans le Key Vault.
+
+5. Cliquez sur `OK` pour ajouter le paramètre d'application.
+
+6. Cliquez sur `Enregistrer` en haut de la page pour enregistrer les modifications.
+
+**Note** : Assurez-vous que votre Web App a l'autorisation d'accéder au Key Vault. Vous pouvez configurer cela dans les paramètres d'accès du Key Vault.
