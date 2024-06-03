@@ -57,8 +57,7 @@ Une fois connecté, créer une nouvelle base de données :
 cd site/wwwroot
 ```
 
-- Télécharger  le fichier tar.gz de WordPress directement dans l'Azure Web App.
-https://akril.net/deployer-wordpress-avec-une-azure-web-app-et-mysql/amp/#:~:text=aux%20derni%C3%A8res%20versions-,ici,-.%C2%A0
+- Télécharger  le fichier tar.gz de WordPress directement dans l'Azure Web App: https://wordpress.org/download/releases/
 
 ![alt text](image-109.png)
 - Retourner dans la commande SSH:
